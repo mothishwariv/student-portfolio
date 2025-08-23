@@ -1,0 +1,17 @@
+<script>
+  const openHam = document.getElementById('openHam');
+  const closeHam = document.getElementById('closeHam');
+  const navItems = document.getElementById('navigation-items');
+
+  openHam.addEventListener('click', () => {
+    navItems.style.display = 'flex';
+    openHam.style.display = 'none';
+    closeHam.style.display = 'block';
+  });
+
+  closeHam.addEventListener('click', () => {
+    navItems.style.display = 'none';
+    openHam.style.display = 'block';
+    closeHam.style.display = 'none';
+  });
+</script>
